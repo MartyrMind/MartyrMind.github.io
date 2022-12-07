@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Строка навигации-->
+    <nav id="header">
+        <!--Бурег меню-->
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="check">
+        
+        <!--Логотип-->
+        <label class="logo">
+            Библиотека СИГМА
+            <i class="fa fa-file-pdf-o"></i>
+        </label>
+        <!--Строка навигации-->
+        <ul>
+            <li><a href="../templates/index.html">Главная</a></li>
+            <li><a href="../templates/category.html">Категории</a></li>
+            <li><a href="../templates/blog.html">Статьи</a></li>
+            <li><a href="#footer">О нас</a></li>
+        </ul>
+    </nav>
+    <!--Заголовок сайта-->
+    <div class="banner">
+        <!--Левая панель-->
+        <div class="title">
+            <!--Подписи-->
+            <div class="main_title">
+                <h1>Читай и читайся</h1>
+                <h2>Сотни технических книг на разнообразную тематику</h2>
+            </div> 
+            <!--Поисковая строка--> 
+            <div class="search">
+                <div class="icon">
+                    <img src="../sources/research.png" alt="" class="find_image">
+                </div>
+                <script>
+                    const icon = document.querySelector('.icon');
+                    const search = document.querySelector('.search');
+                    icon.onclick = function() {search.classList.toggle('active')}
+                </script>
+                <div class="input">
+                    <input type="text" placeholder="Название книги" id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+            </div>
+        </div>
+        <!--Правая панель-->
+        <div class="image">
+            <!--Картинки-->
+            <div class="covered-box">
+                <img src="../sources/header/ellipse.png" alt="" id="ellips">
+                <img src="../sources/header/square_1.png" alt="" id="sqare1">
+                <img src="../sources/header/square_2.png" alt="" id="sqare2">
+                <img src="../sources/header/header_image.png" alt="" id="header_img">
+            </div> 
+        </div>   
+    </div>
+    <!--Содержимое сайта-->
+    <div class="content">
+        <!--Боковое меню-->
+        <div class="side_menu">
+            <div class="items">
+                <h3>Категории</h3>
+                <ul>
+                    <li><a href="#">Все направления</a></li>
+                    <li><a href="#">Математика</a></li>
+                    <li><a href="#">Физика</a></li>
+                    <li><a href="#">Языки программирования</a></li>
+                    <li><a href="#">Машинное обучение</a></li>
+                    <li><a href="#">Разработка</a></li>
+                    
+                </ul>
+            </div>
+            <div class="items">
+                <h3>Рекомендации</h3>
+                <ul>
+                    <li><a href="../templates/category.html">Фронтенд разработка</a></li>
+                    <li><a href="#">Паттерны проектирования</a></li>
+                    <li><a href="#">Подготовка к ШАД</a></li>
+                    <li><a href="#">Книги по С++</a></li>
+                    <li><a href="#">Книги по Pyhon</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!--Верхняя большая панель-->
+        <div class="recommended">
+            <h3>Рекомендуемое</h3>
+            <!--Книжки с кратким описанием-->
+            <div class="book_grid_box">
+                <div class="card" onclick="location.href='../templates/book.html';">
+                    <img src="../sources/book_covers/cover_1.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">TCP/IP Guide<p>
+                        <p class="author">Charles M. Kozierok</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="descr">
+                            TCP/IP - это сетевая модель передачи данных, 
+                            описывающая способ передачи данных от источника информации к получателю. 
+                            Настоящее руководство является полным энциклопедическим справочником 
+                            по протоколу TCP/IP и рассматривает основы его работы на более сотни примерах и иллюстраций.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../sources/book_covers/cover_2.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">The Book of CSS3<p>
+                        <p class="author">Peter Gasston</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="descr">
+                            Со времени появления CSS3 фронтенд-разработка сильно изменилась: 
+                            теперь CSS взял на себя многие функции, которые раньше выполнял JavaScript, 
+                            а также предлагает веб-разработчикам современные инструменты оформления 
+                            веб-приложений и вёрстки. В руководстве вы познакомитесь с многочисленными селекторами, 
+                            2D и 3D трансформацией, флексбоксами и сеткой Grid.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_3.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Большая книга проектов Python<p>
+                        <p class="author">Свейгарт Эл</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="descr">
+                            Отточите свои навыки на самых интересных задачах — графике, 
+                            играх, анимации, расчетах и многом другом. Вы можете экспериментировать, 
+                            добавляя к готовым проектам собственные детали. В 256 строк кода поместится все — 
+                            «винтажная» экранная заставка, забег улиток на скорость, рекламный заголовок-приманка, 
+                            вращающаяся спираль ДНК и так далее.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_4.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Алгоритмы неформально<p>
+                        <p class="author">Брэдфорд Такфилд</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="descr">
+                            Алгоритмы это не только задачи поиска, сортировки или оптимизации, 
+                            они помогут вам поймать бейсбольный мяч, проникнуть в «механику» машинного обучения 
+                            и искусственного интеллекта и выйти за границы возможного. 
+                            Вы узнаете нюансы реализации многих самых популярных алгоритмов современности, 
+                            а также научитесь измерять и оптимизировать их производительность.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Популярное</h3>
+            <!--Книжки без описания-->
+            <div class="book_row">
+                <div class="card" onclick="location.href='../templates/book.html';">
+                    <img src="../sources/book_covers/cover_5.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Байесовская статистика</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Уилл Курт</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_7.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Внутренне устройство Linux</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Брайан Уорд</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_8.png" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Изучаем Ардуино</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Джон Бокселл</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_9.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Компьютерная графика</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Гэбриел Гамбетта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Нижняя большая панель-->
+        <div class="new">
+            <h3>Новинки</h3>
+            <div class="book_grid_box">
+                <div class="card" onclick="location.href='../templates/book.html';">
+                    <img src="../sources/book_covers/cover_10.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Python. К вершинам мастерства<p>
+                        <p class="author">Лусиану Рамальо</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="descr">
+                           Автор рассказывает о базовых средствах языка, 
+                            о его библиотеках и учит писать более краткий, быстрый и удобочитаемый код. 
+                            Вы узнаете о том, как применять идиоматические средства Python 3, 
+                            выходящие за рамки вашего предыдущего опыта. Новое издание состоит из пяти частей, 
+                            которые можно рассматривать как пять отдельных книг.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../sources/book_covers/cover_11.jpeg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Паттерны проектирования<p>
+                        <p class="author">Эрик Фримен, Элизабет Фримен</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="descr">
+                            В любой момент кто-то борется с теми же проблемами, что и у вас. 
+                            И, скорее всего, кто-то ещё их уже решил. 
+                            Используя последние исследования в области когнитивной науки и 
+                            теории обучения для создания мультисенсорного опыта обучения, 
+                            Head First Design Patterns использует визуально богатый формат, 
+                            разработанный для работы вашего мозга, а не текстоемкий подход, который утомляет.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_12.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Прикладное машинное обучение с помощью Scikit-Learn и TensorFlow<p>
+                        <p class="author">Орельен Жерон</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="descr">
+                            Эта книга - замечательное введение в теорию и практику решения задач с помощью нейронных сетей. 
+                            Она охватывает ключевые моменты, необходимые для построения эффективных приложений, 
+                            а также обеспечивает достаточную основу для понимания результатов новых исследований по мере их появления. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_13.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Bash и кибербезопасность<p>
+                        <p class="author">Тронкон</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="descr">
+                            Командная строка может стать идеальным инструментом для обеспечения кибербезопасности. 
+                            Невероятная гибкость и абсолютная доступность превращают стандартный интерфейс командной строки (CLI) 
+                            в фундаментальное решение, если у вас есть соответствующий опыт. 
+                            Пентестеры узнают, как проводить атаки, используя колоссальный функционал, 
+                            встроенный практически в любую версию Linux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h3>Наш выбор</h3>
+            <div class="book_row">
+                <div class="card">
+                    <img src="../sources/book_covers/cover_14.webp" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Танец с кубитами</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Сатор Роберт</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_15.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Компиляторы</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Альфред В. Ахо и др.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_17.jpg" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Архитектура компьютера</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <p class="author">Э. Таненбаум Т. Остин</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../sources/book_covers/cover_16.webp" alt="" id="book">
+                    <div class="texts">
+                        <p class="book_title">Хакинг. Искусство эксплойта</p>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p class="author">Джон Эриксон</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Футер-->
+    <footer id="footer">
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>О нас</h2>
+                <p>
+                   Электронная библиотека - место, где собраны книги на любую тематику
+                </p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Связаться с нами</a></li>
+                    <li><a href="#">Магазины</a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Библиотека</h2>
+                <ul>
+                    <li><a href="#">Математика</a></li>
+                    <li><a href="#">Физика</a></li>
+                    <li><a href="#">Информатика</a></li>
+                    <li><a href="#">Программирование</a></li>
+                    <li><a href="#">Чаще всего скачивают</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>
+                            14 Tverskaya Street<br>
+                            Moscow 117513,<br>
+                            Russia
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p>
+                            <a href="tel:+79871234567">+7 987 123-45-67</a><br>
+                            <a href="tel:+79871234567">+7 987 123-45-67</a>
+                        </p>
+                    </li> 
+
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:example@mail.ru">example@mail.ru</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Сайт разработан студентом группы ИКБО-01-21 Борониным Н.А</p>
+    </div>
+</body>
+
+<script>
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector('nav');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+
+</html>

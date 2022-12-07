@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/blog.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!--Строка навигации-->
+    <nav id="header">
+        <!--Бурег меню-->
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="check">
+        
+        <!--Логотип-->
+        <label class="logo">
+            Библиотека СИГМА
+            <i class="fa fa-file-pdf-o"></i>
+        </label>
+        <!--Строка навигации-->
+        <ul>
+            <li><a href="../templates/index.html">Главная</a></li>
+            <li><a href="../templates/category.html">Категории</a></li>
+            <li><a href="../templates/blog.html">Статьи</a></li>
+            <li><a href="#footer">О нас</a></li>
+        </ul>
+    </nav>
+    <!--Заголовок сайта-->
+    <div class="banner">
+        <!--Левая панель-->
+        <div class="title">
+            <!--Подписи-->
+            <div class="main_title">
+                <h1>Учимся учиться</h1>
+                <h2>Десятки статей обо всем, что связано с учебой</h2>
+            </div> 
+            <!--Поисковая строка--> 
+            <div class="search">
+                <div class="icon">
+                    <img src="../sources/research.png" alt="" class="find_image">
+                </div>
+                <script>
+                    const icon = document.querySelector('.icon');
+                    const search = document.querySelector('.search');
+                    icon.onclick = function() {search.classList.toggle('active')}
+                </script>
+                <div class="input">
+                    <input type="text" placeholder="Название книги" id="mysearch">
+                </div>
+                <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+            </div>
+        </div>
+        <!--Правая панель-->
+        <div class="image">
+            <!--Картинки-->
+            <div class="covered-box">
+                <img src="../sources/header/ellipse.png" alt="" id="ellips">
+                <img src="../sources/header/square_1.png" alt="" id="sqare1">
+                <img src="../sources/header/square_2.png" alt="" id="sqare2">
+                <img src="../sources/5836.png" alt="" id="header_img">
+            </div> 
+        </div>   
+    </div>
+
+    <!--Контент-->
+    <div class="card_box">
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag popular">Popular</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_1.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#webdevelopment #frontend</p>
+                <h2 class="blog-title">Как сделать курсач за день и не умереть</h2>
+                <p class="blog-description">Короткий ответ - никак.</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/girl.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Ленивый студент</h3>
+                        <p class="profile-followers">0 подписчиков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag math">Mathematic</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_2.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#calculus #lifehack</p>
+                <h2 class="blog-title">Готовимся к контрольной по ТФКП</h2>
+                <p class="blog-description">Пара полезных советов</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/boy.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Лучший семинарист</h3>
+                        <p class="profile-followers">30 подписчиков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag technology">Технологии</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_3.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#networks #eNSP</p>
+                <h2 class="blog-title">Настраиваем VLAN для офиса</h2>
+                <p class="blog-description">А почему интерфейс untagged?</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/girl.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Печальный сисадмин</h3>
+                        <p class="profile-followers">404 подписчика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag technology">Технологии</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_4.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#backend #fintech</p>
+                <h2 class="blog-title">Все про стажировку в Тинькофф</h2>
+                <p class="blog-description">Как попасть, какие задачи и сколько зарабатываем</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/woman.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Успешный стажер</h3>
+                        <p class="profile-followers">3 подписчика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag math">Математика</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_5.png" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#linearalgebra #exercies</p>
+                <h2 class="blog-title">Ряды Тейлора для чайников</h2>
+                <p class="blog-description">Я твой синус в ряд раскладывал</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/man.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Суровый лектор</h3>
+                        <p class="profile-followers">8 подписчиков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-banner">
+                <p class="category-tag popular">Популярное</p>
+                <img class="banner-img" src="../sources/blog_covers/cover_6.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <p class="blog-hashtag">#webdevelopment #frontend</p>
+                <h2 class="blog-title">Как проверить 100 курсовых за день?</h2>
+                <p class="blog-description">А может автоматом?</p>
+                <div class="card-profile">
+                    <img class="profile-img"src="../sources/man_1.png" alt="">
+                    <div class="card-profile-info">
+                        <h3 class="profile-name">Уставший научрук</h3>
+                        <p class="profile-followers">228 подписчиков</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Футер-->
+    <footer id="footer">
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>О нас</h2>
+                <p>
+                    Электронная библиотека - место, где собраны книги на любую тематику
+                </p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Связаться с нами</a></li>
+                    <li><a href="#">Магазины</a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Библиотека</h2>
+                <ul>
+                    <li><a href="#">Математика</a></li>
+                    <li><a href="#">Физика</a></li>
+                    <li><a href="#">Информатика</a></li>
+                    <li><a href="#">Программирование</a></li>
+                    <li><a href="#">Чаще всего скачивают</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>
+                            14 Tverskaya Street<br>
+                            Moscow 117513,<br>
+                            Russia
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p>
+                            <a href="tel:+79871234567">+7 987 123-45-67</a><br>
+                            <a href="tel:+79871234567">+7 987 123-45-67</a>
+                        </p>
+                    </li> 
+
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:example@mail.ru">example@mail.ru</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Сайт разработан студентом группы ИКБО-01-21 Борониным Н.А</p>
+    </div>
+</body>
+
+<script>
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector('nav');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</html>
