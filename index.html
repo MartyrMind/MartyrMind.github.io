@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Регистрация</title>
 </head>
 <body>
     <div class="container">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Пароль" required>
+                        <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Пароль" required>
                     </div>
                     <input type="submit" value="Войти" class="btn solid">
                     <p class = social-text>Или войдите, используя соцсети</p>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Пароль" required>
+                        <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Пароль">
                     </div>
                     <input type="submit" value="Зарегистрироваться" class="btn solid">
                     <p class = social-text>Или зарегистрируйтесь, используя соцсети</p>
