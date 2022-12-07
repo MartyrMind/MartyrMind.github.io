@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5605b824a7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/book.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="header">
+        <!--Бурег меню-->
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="check">
+        
+        <!--Логотип-->
+        <label class="logo">
+            Библиотека СИГМА
+            <i class="fa fa-file-pdf-o"></i>
+        </label>
+        <!--Строка навигации-->
+        <ul>
+            <li><a href="../templates/index.html">Главная</a></li>
+            <li><a href="../templates/category.html">Категории</a></li>
+            <li><a href="../templates/blog.html">Блог</a></li>
+            <li><a href="../templates/index.html">О нас</a></li>
+        </ul>
+    </nav>
+    <!--Заголовок сайта-->
+    <div class="wrapper">
+        <div class="banner">
+            <img src="../sources/header/ellipse.png" alt="" id="el1">
+            <img src="../sources/header/ellipse.png" alt="" id="el2">
+            <img src="../sources/header/square_1.png" alt="" id="sq1">
+            <img src="../sources/header/square_2.png" alt="" id="sq2">
+            <img src="../sources/header/square_2.png" alt="" id="sq3">
+        </div>
+        <!-- контент странички -->
+        <div class="content">
+            <!-- блок с книгой -->
+            <div class="book">
+                <!-- основная карточка с обложкой, оценкой и кнопками -->
+                <div class="header">
+                    <img src="../sources/book_covers/cover_1.jpg" alt="">
+                    <div class="text">
+                        <h1>TCP/IP Guide</h1>
+                        <div class="author">
+                            <p>Charles M. Kozierok</p>
+                            <p><i class="fa fa-calendar-o"></i>&nbsp;2005</p>
+                        </div>
+                        <div class="star_rating">
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                        </div>
+                        <div class="author">
+                            <p><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;100</p>
+                            <p><i class="fa fa-download" aria-hidden="true"></i>&nbsp;0</p>
+                        </div>
+                            
+                        <button class="download-button" data-timer="5">
+                            <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
+                            <span>&nbsp</span>
+                            <span class="texts"> Загрузить файл</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- описание, иконки категории, таблица с сводкой -->
+                <div class="description">
+                    <div class="text">
+                        <h2>Описание</h2>
+                        <p>
+                            Как следует из определения, TCP/IP - это сетевая модель передачи данных, 
+                            описывающая способ передачи данных от источника информации к получателю. 
+                            Настоящее руководство является полным энциклопедическим справочником по протоколу TCP/IP 
+                            и рассматривает основы его работы на более сотни примерах и иллюстраций.
+                        </p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag1">Большой объем</span>
+                        <span class="tag1">Сети</span>
+                        <span class="tag1">Справочник</span>
+                    </div>
+                    <div class="info">
+                        <h2>Общая информация</h2>
+                        <div class="table">
+                            <div class="info-block">
+                                <p class="type">Автор</p>
+                                <p class="data">Charles M. Kozierok</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="type">Год издания</p>
+                                <p class="data">2005</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="type">Язык</p>
+                                <p class="data">Английский</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="type">Число страниц</p>
+                                <p class="data">2096</p>
+                            </div>
+                            <div class="info-block">
+                                <p class="type">Формат</p>
+                                <p class="data">PDF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments">
+                    <button>Перейти к комментариям</button>
+                </div> 
+            </div>
+            <!-- сайдбар с похожими книгами-->
+            <div class="side_content">
+                <h2>Похожее</h2>
+                <div class="book_grid_box">
+                    <div class="card">
+                        <img src="../sources/book_covers/cover_18.webp" alt="" id="book">
+                        <div class="texts">
+                            <p class="book_title">Python для сетевых инженеров<p>
+                            <p class="author">Чоу Эрик</p>
+                            <div class="star_rating">
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9734</button>
+                            </div>
+                            <p class="descr">
+                                Python — идеальный язык для сетевых инженеров, предлагающий инструменты, 
+                                которые ранее были доступны только системным инженерам и разработчикам приложений.
+                                Третье издание полностью переработано и обновлено для использования Python 3.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../sources/book_covers/cover_19.jpg" alt="" id="book">
+                        <div class="texts">
+                            <p class="book_title">Компьютерные сети. Принципы, технологии, протоколы<p>
+                            <p class="author">Виктор и Наталья Олифер</p>
+                            <div class="star_rating">
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                            </div>
+                            <p class="descr">
+                                Рекомендовано Министерством образования и науки Российской Федерации 
+                                в качестве учебного пособия для студентов высших учебных заведений
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../sources/book_covers/cover_20.jpg" alt="" id="book">
+                        <div class="texts">
+                            <p class="book_title">Компьютерные сети<p>
+                            <p class="author">Э. Таненбаум</p>
+                            <div class="star_rating">
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                            </div>
+                            <p class="descr">
+                                В книге последовательно изложены основные концепции, 
+                                определяющие современное состояние и тенденции развития компьютерных сетей. 
+                                Авторы подробнейшим образом объясняют устройство и принципы работы аппаратного и 
+                                программного обеспечения, рассматривают все аспекты и уровни организации сетей — от 
+                                физического до уровня прикладных программ. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../sources/book_covers/cover_21.jpg" alt="" id="book">
+                        <div class="texts">
+                            <p class="book_title">Тестирование на проникновение в сеть<p>
+                            <p class="author">Ройс Дэвис</p>
+                            <div class="star_rating">
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9733</button>
+                                <button class="star">&#9734</button>
+                            </div>
+                            <p class="descr">
+                                В начале книги изучаются хакерские приемы и инструменты пентестинга; 
+                                затем поэтапно описываются действия, которые злоумышленник предпринимает 
+                                для захвата контроля над корпоративной сетью. Это
+                                позволит выявить критические проблемы безопасности и 
+                                представить результаты пентеста, показывающие, как лучше защитить корпоративную сеть.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../scripts/category.js"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector('nav');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script>
+        const allStars = document.querySelectorAll('.header .star_rating .star');
+        allStars.forEach((star, i) => {
+            star.onclick = function() {
+                let current_star_level = i + 1;
+                allStars.forEach((star, j) => {
+                    if(current_star_level >= j + 1) star.innerHTML = '&#9733';
+                    else star.innerHTML = '&#9734';
+                    
+                })
+            }
+        })
+    </script>
+</body>
+</html>
