@@ -33,7 +33,7 @@
         <ul>
             <li><a href="../templates/landing.html">Главная</a></li>
             <li><a href="../templates/category.html">Категории</a></li>
-            <li><a href="../templates/blog.html">СТатьи</a></li>
+            <li><a href="../templates/blog.html">Форум</a></li>
             <li><a href="#footer">О нас</a></li>
         </ul>
     </nav>
@@ -88,23 +88,23 @@
             <div class="items">
                 <h3>Категории</h3>
                 <ul>
-                    <li><a href="#">Все направления</a></li>
-                    <li><a href="#">Математика</a></li>
-                    <li><a href="#">Физика</a></li>
-                    <li><a href="#">Языки программирования</a></li>
-                    <li><a href="#">Машинное обучение</a></li>
-                    <li><a href="#">Разработка</a></li>
+                    <li><a href="/templates/category.html">Все направления</a></li>
+                    <li><a href="/templates/category.html">Математика</a></li>
+                    <li><a href="/templates/category.html">Физика</a></li>
+                    <li><a href="/templates/category.html">Языки программирования</a></li>
+                    <li><a href="/templates/category.html">Машинное обучение</a></li>
+                    <li><a href="/templates/category.html">Разработка</a></li>
                     
                 </ul>
             </div>
             <div class="items">
                 <h3>Рекомендации</h3>
                 <ul>
-                    <li><a href="#">Паттерны проектирования</a></li>
-                    <li><a href="#">Подготовка к ШАД</a></li>
-                    <li><a href="#">Книги по С++</a></li>
-                    <li><a href="#">Книги по Pyhon</a></li>
-                    <li><a href="#">Фронтенд разработка</a></li>
+                    <li><a href="/templates/category.html">Паттерны проектирования</a></li>
+                    <li><a href="/templates/category.html">Подготовка к ШАД</a></li>
+                    <li><a href="/templates/category.html">Книги по С++</a></li>
+                    <li><a href="/templates/category.html">Книги по Pyhon</a></li>
+                    <li><a href="/templates/category.html">Фронтенд разработка</a></li>
                 </ul>
             </div>
         </div>
@@ -114,7 +114,7 @@
             <!--Книжки с кратким описанием-->
             <div class="book_grid_box">
                 <div class="card">
-                    <img src="../sources/book_covers/cover_2.jpg" alt="" id="book">
+                    <img src="../sources/book_covers/cover_2.jpg" alt="" id="book" onclick="location.href='/templates/book.html'">
                     <div class="text">
                         <p class="book_title">The Book of CSS3<p>
                         <p class="author">Peter Gasston</p>
@@ -132,7 +132,7 @@
                             веб-приложений и вёрстки. В руководстве вы познакомитесь с многочисленными селекторами, 
                             2D и 3D трансформацией, флексбоксами и сеткой Grid.
                         </p>
-                        <button class="download-button" data-timer="5">
+                        <button class="download-button" data-timer="5" onclick="initTimer(event.target.closest('button'))">
                             <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
                             <span>&nbsp</span>
                             <span class="texts"> Загрузить файл</span>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../sources/book_covers/cover_22.jpg" alt="" id="book">
+                    <img src="../sources/book_covers/cover_22.jpg" alt="" id="book" onclick="location.href='/templates/book.html'">
                     <div class="text">
                         <p class="book_title">Learning React<p>
                         <p class="author">Alex Banks, Eve Porcello</p>
@@ -157,7 +157,7 @@
                             для веб-разработчиков и инженеров-программистов, которые знают основы JavaScript, 
                             CSS и HTML. В ней представлены передовые практики и шаблоны для написания современного кода на React.
                         </p>
-                        <button class="download-button" data-timer="5">
+                        <button class="download-button" data-timer="5" onclick="initTimer(event.target.closest('button'))">
                             <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
                             <span>&nbsp</span>
                             <span class="texts"> Загрузить файл</span>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../sources/book_covers/cover_23.png" alt="" id="book">
+                    <img src="../sources/book_covers/cover_23.png" alt="" id="book" onclick="location.href='/templates/book.html'">
                     <div class="text">
                         <p class="book_title">JavaScript: The Definitive Guide<p>
                         <p class="author">David Flanagan</p>
@@ -183,7 +183,7 @@
                             Седьмое издание полностью обновлено, чтобы охватить версию JavaScript 2020 года, 
                             а новые главы посвящены классам, модулям, итераторам, генераторам, Promises и метапрограммированию.
                         </p>
-                        <button class="download-button" data-timer="5">
+                        <button class="download-button" data-timer="5" onclick="initTimer(event.target.closest('button'))">
                             <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
                             <span>&nbsp</span>
                             <span class="texts"> Загрузить файл</span>
@@ -191,35 +191,35 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../sources/book_covers/cover_24.jpg" alt="" id="book">
+                    <img src="../sources/book_covers/cover_24.jpg" alt="" id="book" onclick="location.href='/templates/book.html'">
                     <div class="text">
                         <p class="book_title">Регулярные выражения<p>
                         <p class="author">Фридл Дж.</p>
                         <div class="star_rating">
-                            <button class="star">&#9734</button>
-                            <button class="star">&#9734</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
                             <button class="star">&#9734</button>
                             <button class="star">&#9734</button>
                             <button class="star">&#9734</button>
                         </div>
                         <p class="descr">Книга об эффективной работе с текстом в таких языках программирования как Java, Perl, PHP и т.д. 
                         </p>
-                        <button class="download-button" data-timer="5">
+                        <button class="download-button" data-timer="5" onclick="initTimer(event.target.closest('button'))">
                             <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
                             <span>&nbsp</span>
                             <span class="texts"> Загрузить файл</span>
                         </button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../sources/book_covers/cover_25.jpg" alt="" id="book">
+                <div class="card" >
+                    <img src="../sources/book_covers/cover_25.jpg" alt="" id="book" onclick="location.href='/templates/book.html'">
                     <div class="text">
                         <p class="book_title">HTML5. Рецепты программирования<p>
                         <p class="author">Шмитт К., Симпсон К.</p>
                         <div class="star_rating">
-                            <button class="star">&#9734</button>
-                            <button class="star">&#9734</button>
-                            <button class="star">&#9734</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
                             <button class="star">&#9734</button>
                             <button class="star">&#9734</button>
                         </div>
@@ -229,7 +229,7 @@
                             Издание охватывает широкий круг вопросов: от семантической разметки, веб-форм 
                             и мультимедийных элементов до технологий геолокации и JavaScript API.
                         </p>
-                        <button class="download-button" data-timer="5">
+                        <button class="download-button" data-timer="5" onclick="initTimer(event.target.closest('button'))">
                             <span class="material-symbols-rounded"><i class="fa fa-floppy-o"></i></span>
                             <span>&nbsp</span>
                             <span class="texts"> Загрузить файл</span>

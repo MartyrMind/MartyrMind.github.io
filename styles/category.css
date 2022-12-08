@@ -164,7 +164,7 @@ nav ul li:active a
 .covered-box #header_img
 {
     position: absolute;
-    max-width: 85%;
+    max-width: 75%;
     top: 50%;
     left: 50%;
 
@@ -502,6 +502,7 @@ nav ul li:active a
     min-height: 300px;
     border-radius: 20px;
     transition: 1s;
+    cursor: pointer;
     
 }
 

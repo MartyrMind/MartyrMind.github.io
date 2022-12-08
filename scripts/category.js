@@ -1,12 +1,12 @@
-const downloadBtn = document.querySelector(".download-button");
-const fileLink = "";
 
-const initTimer = () => {
+function initTimer(event) {
+    console.log(event);
+    const downloadBtn = event;
     let timer = downloadBtn.dataset.timer;
     downloadBtn.classList.add("timer");
     downloadBtn.innerHTML = `Ваш файл загрузится через <b>&nbsp${timer}</b>c`;
     const initCounter = setInterval(() => {
-        if (timer > 0) {
+        if (timer > 0) {    
             timer--;
             return (downloadBtn.innerHTML = `Ваш файл загрузится через <b>&nbsp${timer}</b> c`);
         }
@@ -18,7 +18,3 @@ const initTimer = () => {
         }, 3000)
     }, 1000);
 };
-
-
-
-downloadBtn.addEventListener("click", initTimer);

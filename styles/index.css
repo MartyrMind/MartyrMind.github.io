@@ -16,31 +16,25 @@ body
 nav
 {
     font-family: 'Rubik', sans-serif;
-
     position: fixed;
     top: 0;
     left: 0;
     height: 100px;
     width: 100%;
-
     z-index: 15;
     transition: .6s;
 }
 
 nav.sticky {
     padding-top: 10px;
-
     border-radius: 0 0 0 20px;
-
     background-color: #ff9800;
 }
 
 nav label.logo {
     padding: 0 100px;
-
     font-size: 35px;
     line-height: 80px;
-
     color: #000;
     font-weight: bold;
 }
@@ -52,9 +46,7 @@ nav ul {
 
 nav ul li {
     padding: 0 10px;
-
     display: inline-block;
-
     line-height: 80px;
 }
 
@@ -164,7 +156,7 @@ nav ul li:active a
 .covered-box #header_img
 {
     position: absolute;
-    max-width: 80%;
+    max-width: 75%;
     top: 50%;
     left: 50%;
 
